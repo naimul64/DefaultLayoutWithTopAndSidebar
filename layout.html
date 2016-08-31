@@ -10,45 +10,60 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
+        
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="#" class="navbar-left"><img alt="SureCash" src="logo.png"/></a>
+                    <form class="navbar-form navbar-left">
+                        <a href="#" class="navbar-left"><img alt="SureCash" src="logo.png"/></a>
+                    </form>
                 </div>
-                <div class="navbar-header navbar-right">
-                    <a href="#switch" class="navbar-right">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right">
                         <button type="button" class="btn btn-primary">Switch Institute</button>
-                    </a>
+                    </form>
                 </div>
             </div>
         </nav>
-        <div id="MainMenu" class="span5">
-            <div class="list-group panel sidebar-nav span5">
-                <a href="#" class="list-group-item list-group-item-success">Home</a>
-                <a href="#student" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Students</a>
-                <ul class="collapse" id="student">
-                    <a href="#" class="list-group-item">Student</a>
-                    <a href="#" class="list-group-item">Import Student</a>
-                    <a href="#" class="list-group-item">View Process List</a>
-                </ul>
-                <a href="#report" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Report</a>
-                <ul class="collapse" id="report">
-                    <a href="#" class="list-group-item">Transaction</a>
-                    <a href="#" class="list-group-item">Reverse Transaction</a>
-                    <a href="#" class="list-group-item">Montwise Fees Report</a>
-                </ul>
-                <a href="#template" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Template</a>
-                <ul class="collapse" id="template">
-                    <a href="#" class="list-group-item">Institute Template</a>
-                    <a href="#" class="list-group-item">Class</a>
-                    <a href="#" class="list-group-item">Session</a>
-                </ul>
-                <a href="#user" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">User</a>
-                <ul class="collapse" id="user">
-                    <a href="#" class="list-group-item">User</a>
-                    <a href="#" class="list-group-item">Migration</a>
-                    <a href="#" class="list-group-item">LogOut</a>
-                </ul>
+
+        <!--  -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="MainMenu" class="nav-side-menu">
+                        <div class="list-group panel">
+                            <a href="#" class="list-group-item list-group-item-success">Home</a>
+                            <a href="#student" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Students</a>
+                            <div class="collapse sidebar-nav" id="student">
+                                <a href="#" class="list-group-item">Student</a>
+                                <a href="#" class="list-group-item">Import Student</a>
+                                <a href="#" class="list-group-item">View Process List</a>
+                            </div>
+                            <a href="#report" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Report</a>
+                            <div class="collapse sidebar-nav" id="report">
+                                <a href="#" class="list-group-item">Transaction</a>
+                                <a href="#" class="list-group-item">Reverse Transaction</a>
+                                <a href="#" class="list-group-item">Montwise Fees Report</a>
+                            </div>
+                            <a href="#template" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Template</a>
+                            <div class="collapse sidebar-nav" id="template">
+                                <a href="#" class="list-group-item">Institute Template</a>
+                                <a href="#" class="list-group-item">Class</a>
+                                <a href="#" class="list-group-item">Session</a>
+                            </div>
+                            <a href="#user" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">User</a>
+                            <div class="collapse sidebar-nav" id="user">
+                                <a href="#" class="list-group-item">User</a>
+                                <a href="#" class="list-group-item">Migration</a>
+                                <a href="#" class="list-group-item">LogOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <h1>Page content here</h1>
+                </div>
             </div>
         </div>
     </body>
