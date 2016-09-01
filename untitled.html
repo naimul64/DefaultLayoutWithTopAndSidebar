@@ -4,11 +4,16 @@
         <link rel="icon" type="image/gif/png/ico" href="home.ico">
         <meta charset="UTF-8">
         <title>Layout Testing</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" type="text/css" href="bootstrap.min3.3.7.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
         <script src="jquery.min.1.9.1.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="bootstrap.min.3.3.7.js"></script>
+        <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+        <style type="text/css">
+            .right {
+                text-align: right;
+            }
+        </style>
+
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -18,13 +23,7 @@
                         <a href="#" class="navbar-left"><img alt="SureCash" src="logo.png"/></a>
                     </form>
                 </div>
-                <!-- <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    </div> -->
+            
                 <div id="navbar" class="navbar-collapse collapse">
                     <p class="navbar-text">User: Admin    &emsp;&emsp;     Institute: Chittagong Collegiate School</p>
                     <form class="navbar-form navbar-right">
@@ -68,63 +67,85 @@
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                          <a data-toggle="collapse" href="#searchForm">Student Search</a> &emsp;&emsp; <a href="http://google.com">Import Student</a>
-                          <!-- <button style="float:right" type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#searchForm">
-                            <span class="caret"></span>
-                          </button> -->
-                      </div>
-                      <div class="panel-body" id="searchForm">
-                        <form>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputEmail1">Registration ID</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Registration ID">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Name</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputEmail1">Contact no</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Contact no">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Roll no</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Roll no">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Section</label>
-                                    <select class="form-control">
-                                        <option>A</option><option>B</option><option>C</option><option>D</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Session</label>
-                                    <select class="form-control">
-                                        <option>2012-13</option><option>2013-14</option><option>2014-15</option><option>2015-16</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Shift</label>
-                                    <select class="form-control">
-                                        <option>Morning</option><option>Day</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="exampleInputPassword1">Hostel</label>
-                                    <select class="form-control">
-                                        <option>শাপলা</option><option>দোয়েল</option><option>কাঁঠাল</option><option>ইলিশ</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <button type="submit" class="btn btn-primary">Search</button>
-                                    <button type="submit" class="btn btn-info">Reset</button>
-                                </div>
-                            </form>
-                      </div>
-                    </div>
+                <div class="row">
+                <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <div class="panel-title">
 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Student Search
+                                    </div>
+                                    <div class="col-md-6 right">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#searchForm">
+                                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                        </a>
+                                        
+                                    </div>
+                                    
+                                        
+                                </div>
+                                
+                              </div>
+
+                            </div>
+                          
+                            <div id="searchForm"  class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                <form>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputEmail1">Registration ID</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Registration ID">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Name</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputEmail1">Contact no</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Contact no">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Roll no</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Roll no">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Section</label>
+                                        <select class="form-control">
+                                            <option>A</option><option>B</option><option>C</option><option>D</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Session</label>
+                                        <select class="form-control">
+                                            <option>2012-13</option><option>2013-14</option><option>2014-15</option><option>2015-16</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Shift</label>
+                                        <select class="form-control">
+                                            <option>Morning</option><option>Day</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="exampleInputPassword1">Hostel</label>
+                                        <select class="form-control">
+                                            <option>শাপলা</option><option>দোয়েল</option><option>কাঁঠাল</option><option>ইলিশ</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-md-5">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                        <button type="submit" class="btn btn-info">Reset</button>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        </div>
+                    </div> <!-- end row -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Search Result
@@ -198,7 +219,7 @@
                 </div>
                 <div class="navbar-header navbar-right">
                     Powered by <br/>
-                    <a href="#switch" class="navbar-right">
+                    <a href="#switch">
                     Progoti Systems
                     </a>
                 </div>
