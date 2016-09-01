@@ -4,11 +4,10 @@
         <link rel="icon" type="image/gif/png/ico" href="home.ico">
         <meta charset="UTF-8">
         <title>Layout Testing</title>
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" type="text/css" href="bootstrap.min3.3.7.css">
         <script src="jquery.min.1.9.1.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
         <script src="bootstrap.min.3.3.7.js"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -18,13 +17,7 @@
                         <a href="#" class="navbar-left"><img alt="SureCash" src="logo.png"/></a>
                     </form>
                 </div>
-                <!-- <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    </div> -->
+            
                 <div id="navbar" class="navbar-collapse collapse">
                     <p class="navbar-text">User: Admin    &emsp;&emsp;     Institute: Chittagong Collegiate School</p>
                     <form class="navbar-form navbar-right">
@@ -69,13 +62,17 @@
                 </div>
                 <div class="col-md-10">
                     <div class="panel panel-default">
-                      <div class="panel-heading" data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
-                          <a data-toggle="collapse" href="#searchForm">Student Search</a> &emsp;&emsp; <a href="http://google.com">Import Student</a>
-                          <!-- <button style="float:right" type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#searchForm">
-                            <span class="caret"></span>
-                          </button> -->
-                      </div>
-                      <div class="panel-body" id="searchForm">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#searchForm">
+                          Student Search
+                        </a>
+                         &emsp;&emsp; <a href="http://google.com">Import Student</a>
+                      </h4>
+                    </div>
+                      
+                      <div id="searchForm"  class="panel-collapse collapse in">
+                          <div class="panel-body">
                         <form>
                                 <div class="form-group col-md-5">
                                     <label for="exampleInputEmail1">Registration ID</label>
@@ -123,6 +120,8 @@
                                 </div>
                             </form>
                       </div>
+                      </div>
+                      
                     </div>
 
                     <div class="panel panel-default">
